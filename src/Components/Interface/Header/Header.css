@@ -1,0 +1,217 @@
+/* Portfolio Header Styling */
+.portfolio-header {
+  position: fixed; /* Changed from sticky to fixed */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  z-index: 1000; /* High stacking */
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80);
+  background-size: 300% 300%;
+  animation: gradientShift 10s ease infinite;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+}
+
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Enhanced Logo with Image */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  animation: shimmer 4s ease-in-out infinite;
+  /* background: linear-gradient(90deg, #fffbd5, #f9d423); */
+  background: white;
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.logo-img {
+  max-height: 50px; /* ✅ This ensures image fits inside header */
+  width: auto;
+  object-fit: contain;
+  filter: 
+    drop-shadow(2px 2px 4px rgba(0,0,0,0.2))
+    brightness(1.05) 
+    saturate(1.1);
+  border-radius: 8px;
+  padding: 2px;
+}
+
+
+/* .logo-img:hover {
+  transform: scale(1.1) rotate(5deg);
+  filter: 
+    drop-shadow(3px 3px 6px rgba(0,0,0,0.3))
+    brightness(1.1) 
+    saturate(1.2);
+} */
+
+.logo-text {
+  font-size: 28px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Navbar links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.2s;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #fff700;
+  transform: scale(1.05);
+}
+
+/* Hamburger Icon (Mobile only) */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 270px;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 80px 20px 20px;
+    flex-direction: column;
+    text-align: left;
+    z-index: 1000;
+    transition: left 0.3s ease;
+  }
+
+  .nav-links.active {
+    display: flex;
+    left: 0;
+  }
+
+  .nav-links a {
+    margin: 15px 0;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    gap: 6px;
+    align-items: center;
+  }
+
+  .logo-img {
+    max-height: 44px; /* ✅ Instead of fixed height */
+    width: auto;
+  }
+
+  .logo-text {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+    gap: 2px; /* ✅ Minimal gap */
+    align-items: center;
+  }
+
+  .logo-img {
+    max-height: 40px; /* ✅ Keeps image large but contained */
+    width: auto;
+  }
+
+  .logo-text {
+    font-size: 22px;
+  }
+
+  .nav-links {
+    width: 230px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+}
