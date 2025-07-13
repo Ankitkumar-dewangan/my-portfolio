@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Ankitkumar-dewangan/my-portfolio.git/static/css/main.e382a9e1.css",
-    "main.js": "/Ankitkumar-dewangan/my-portfolio.git/static/js/main.7210d335.js",
-    "static/js/453.96453769.chunk.js": "/Ankitkumar-dewangan/my-portfolio.git/static/js/453.96453769.chunk.js",
-    "static/media/WhatsApp Image 2025-07-05 at 22.52.28_109c30fd.jpg": "/Ankitkumar-dewangan/my-portfolio.git/static/media/WhatsApp Image 2025-07-05 at 22.52.28_109c30fd.53a956ca9340d1310366.jpg",
-    "static/media/shankra.png": "/Ankitkumar-dewangan/my-portfolio.git/static/media/shankra.5d0c04f269e608fed936.png",
-    "static/media/bbhai.jpg": "/Ankitkumar-dewangan/my-portfolio.git/static/media/bbhai.88730fa12c4eb743fe0d.jpg",
-    "static/media/emogy.jpg": "/Ankitkumar-dewangan/my-portfolio.git/static/media/emogy.16a1a5a09e8bfb20e518.jpg",
-    "static/media/ankit_logo-removebg-preview.png": "/Ankitkumar-dewangan/my-portfolio.git/static/media/ankit_logo-removebg-preview.3405cf6303c5ee4544c8.png",
-    "static/media/ddc.png": "/Ankitkumar-dewangan/my-portfolio.git/static/media/ddc.eb1242a0b88f53de1da6.eb1242a0b88f53de1da6.png",
-    "static/media/wheather.webp": "/Ankitkumar-dewangan/my-portfolio.git/static/media/wheather.a2013c5925c9353c146c.webp",
-    "static/media/Real.avif": "/Ankitkumar-dewangan/my-portfolio.git/static/media/Real.b9fcad032fbbc35bb08a.avif",
-    "static/media/E-commerce.webp": "/Ankitkumar-dewangan/my-portfolio.git/static/media/E-commerce.cb2577e7b97b668d4d6b.webp",
-    "index.html": "/Ankitkumar-dewangan/my-portfolio.git/index.html",
-    "main.e382a9e1.css.map": "/Ankitkumar-dewangan/my-portfolio.git/static/css/main.e382a9e1.css.map",
-    "main.7210d335.js.map": "/Ankitkumar-dewangan/my-portfolio.git/static/js/main.7210d335.js.map",
-    "453.96453769.chunk.js.map": "/Ankitkumar-dewangan/my-portfolio.git/static/js/453.96453769.chunk.js.map"
+    "main.css": "/my-portfolio/static/css/main.e382a9e1.css",
+    "main.js": "/my-portfolio/static/js/main.fa9072da.js",
+    "static/js/453.96453769.chunk.js": "/my-portfolio/static/js/453.96453769.chunk.js",
+    "static/media/WhatsApp Image 2025-07-05 at 22.52.28_109c30fd.jpg": "/my-portfolio/static/media/WhatsApp Image 2025-07-05 at 22.52.28_109c30fd.53a956ca9340d1310366.jpg",
+    "static/media/shankra.png": "/my-portfolio/static/media/shankra.5d0c04f269e608fed936.png",
+    "static/media/bbhai.jpg": "/my-portfolio/static/media/bbhai.88730fa12c4eb743fe0d.jpg",
+    "static/media/emogy.jpg": "/my-portfolio/static/media/emogy.16a1a5a09e8bfb20e518.jpg",
+    "static/media/ankit_logo-removebg-preview.png": "/my-portfolio/static/media/ankit_logo-removebg-preview.3405cf6303c5ee4544c8.png",
+    "static/media/ddc.png": "/my-portfolio/static/media/ddc.eb1242a0b88f53de1da6.eb1242a0b88f53de1da6.png",
+    "static/media/wheather.webp": "/my-portfolio/static/media/wheather.a2013c5925c9353c146c.webp",
+    "static/media/Real.avif": "/my-portfolio/static/media/Real.b9fcad032fbbc35bb08a.avif",
+    "static/media/E-commerce.webp": "/my-portfolio/static/media/E-commerce.cb2577e7b97b668d4d6b.webp",
+    "index.html": "/my-portfolio/index.html",
+    "main.e382a9e1.css.map": "/my-portfolio/static/css/main.e382a9e1.css.map",
+    "main.fa9072da.js.map": "/my-portfolio/static/js/main.fa9072da.js.map",
+    "453.96453769.chunk.js.map": "/my-portfolio/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e382a9e1.css",
-    "static/js/main.7210d335.js"
+    "static/js/main.fa9072da.js"
   ]
 }
