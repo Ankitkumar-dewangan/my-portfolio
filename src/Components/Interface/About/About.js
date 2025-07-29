@@ -35,7 +35,7 @@ const About = ({ animateKey }) => {
                   <span>›</span> <strong>Birthday:</strong> 26 Feb 2002
                 </li>
                 <li>
-                  <span>›</span> <strong>Job:</strong> Bativate Services LLP 
+                  <span>›</span> <strong>Job:</strong> Botivate Services LLP 
                 </li>
                 <li>
                   <span>›</span> <strong>Phone:</strong> 6264460405

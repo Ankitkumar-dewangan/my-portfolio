@@ -6,7 +6,7 @@ import { LinkOutlined, DownloadOutlined } from "@ant-design/icons";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./Home.css";
-import Pic from "../imagew/bbhai.jpg"
+import Pic from "../imagew/bbhai.jpg";
 const { Title, Paragraph, Text } = Typography;
 
 const Home = ({ animateKey }) => {
@@ -163,7 +163,10 @@ const Home = ({ animateKey }) => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <a href="/Resume.pdf" download>
+                <a
+                  href={`${process.env.PUBLIC_URL}/resume.pdf`}
+                  download="Ankit_Resume.pdf"
+                >
                   <Button
                     type="default"
                     icon={<DownloadOutlined />}

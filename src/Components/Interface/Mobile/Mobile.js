@@ -58,7 +58,7 @@ const MobileSidebar = ({
           <FaInstagram color="#E1306C" size={30} />
         </a>
         <a
-          href="https://linkedin.com/in/your-profile"
+          href="https://www.linkedin.com/feed/"
           target="_blank"
           rel="noreferrer"
         >

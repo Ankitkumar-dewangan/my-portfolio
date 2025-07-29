@@ -138,7 +138,7 @@ const Contact = ({ animateKey }) => {
                 />
                 <p>LinkedIn</p>
                 <a
-                  href="https://linkedin.com/in/your-profile"
+                  href="https://www.linkedin.com/feed/"
                   target="_blank"
                   rel="noreferrer"
                 >
