@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>House Of Ankit - Portfolio Inquiry</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 25%, #2d1b5e 50%, #1a1a3e 75%, #0f0f23 100%);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #e3e3e3;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 30px auto;
+      background: rgba(20, 20, 40, 0.7);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+      border-top: 5px solid transparent;
+      border-image: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1) 1;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 50%, #45b7d1 100%);
+      color: white;
+      padding: 25px 30px;
+      text-align: center;
+      position: relative;
+    }
+
+    .header::before {
+      content: '🎨';
+      position: absolute;
+      top: 15px;
+      right: 30px;
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    .header h2 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .header .subtitle {
+      font-size: 14px;
+      opacity: 0.9;
+      margin-top: 5px;
+      font-weight: 300;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .inquiry-badge {
+      display: inline-block;
+      background: linear-gradient(45deg, #ff6b6b, #feca57);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .content p {
+      font-size: 15px;
+      color: #d1d1d1;
+      margin: 12px 0;
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .content p strong {
+      min-width: 90px;
+      flex-shrink: 0;
+    }
+
+    .content p:last-child {
+      border-bottom: none;
+    }
+
+    .content strong {
+      color: #ffffff;
+      font-weight: 600;
+      display: inline-block;
+      min-width: 90px;
+    }
+
+    .intro-text {
+      background: linear-gradient(135deg, #1c2331 0%, #212a3a 100%);
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      border-left: 4px solid #64b5f6;
+    }
+
+    .intro-text h3 {
+      margin: 0 0 8px 0;
+      color: #90caf9;
+      font-size: 18px;
+    }
+
+    .intro-text p {
+      margin: 0;
+      font-size: 14px;
+      color: #cfd8dc;
+      border-bottom: none;
+      padding: 0;
+    }
+
+    .next-steps {
+      background: linear-gradient(135deg, #1a2c1e 0%, #2d4d34 100%);
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 25px;
+      border-left: 4px solid #81c784;
+    }
+
+    .next-steps h3 {
+      margin: 0 0 10px 0;
+      color: #c8e6c9;
+      font-size: 16px;
+    }
+
+    .next-steps ul {
+      margin: 0;
+      padding-left: 20px;
+      font-size: 14px;
+      color: #e0f2f1;
+    }
+
+    .next-steps li {
+      margin: 5px 0;
+    }
+
+    .footer {
+      background: linear-gradient(135deg, #1c1f26 0%, #2c303b 100%);
+      padding: 20px 30px;
+      font-size: 13px;
+      color: #eeeeee;
+      text-align: center;
+      border-top: 1px solid #444;
+    }
+
+    .footer .brand {
+      font-size: 16px;
+      font-weight: 600;
+      background: linear-gradient(45deg, #ff6b6b, #feca57);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 5px;
+    }
+
+    .footer p {
+      margin: 5px 0;
+      opacity: 0.8;
+    }
+
+    @media screen and (max-width: 600px) {
+      .content {
+        padding: 20px;
+      }
+
+      .header h2 {
+        font-size: 20px;
+      }
+
+      .content p {
+        font-size: 15px;
+      }
+
+      .intro-text,
+      .next-steps {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h2>Portfolio Inquiry - House Of Ankit</h2>
+      <div class="subtitle">Creative Portfolio & Design Services</div>
+    </div>
+    <div class="content">
+      <div class="inquiry-badge">New Portfolio Inquiry</div>
+
+
+
+      <p><strong>Name:</strong> {{ name }}</p>
+      <p><strong>Email:</strong> {{ email }}</p>
+      <p><strong>Phone:</strong> {{ phone }}</p>
+      <p><strong>Project Suggestion:</strong> {{ suggestion }}</p>
+      <p><strong>Client Feedback:</strong> {{ feedback }}</p>
+
+
+    </div>
+    <div class="footer">
+      <div class="brand">House Of Ankit</div>
+    </div>
+  </div>
+</body>
+
+</html>
