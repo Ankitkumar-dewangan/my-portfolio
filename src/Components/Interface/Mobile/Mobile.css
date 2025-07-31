@@ -1,0 +1,128 @@
+/* src/components/MobileSidebar.css */
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 100vh;
+  /* background: #030b15; */
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 25%, #2d1b5e 50%, #1a1a3e 75%, #0f0f23 100%);
+
+  color: white;
+  padding: 20px;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slideIn 0.3s ease;
+  position: fixed; /* or absolute if needed */
+  z-index: 1000; /* Keep this moderate */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.sidebar-header {
+  position: relative;
+  text-align: center;
+}
+
+.sidebar-avatar {
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  z-index: 1; /* Not too high */
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.social-icons span {
+  background: #2a2f3a;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.social-icons span:hover {
+  background: #4a90e2;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.sidebar-menu li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.sidebar-menu li:hover {
+  background: #1e2530;
+}
+
+.dropdown-icon {
+  margin-left: auto;
+}
+.social-icons {
+  display: flex;
+  gap: 14px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  font-size: 22px;
+  background: #fff;
+  padding: 12px;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
